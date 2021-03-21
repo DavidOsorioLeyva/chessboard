@@ -1,0 +1,28 @@
+header {
+    height: 35px;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 16px;
+}
+p {
+    font-size: 12px;
+}
+.main {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 340px 30px 200px;
+}
+.board-wrapper {
+    width: 300px;
+    height: 300px;
+    grid-row: 1 / 2;
+}
+.button-wrapper {
+    grid-row: 2 / 3;
+}
+.info-wrapper {
+    grid-row: 3 / 4;
+}
