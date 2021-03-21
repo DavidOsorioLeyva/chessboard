@@ -1,0 +1,61 @@
+.king {
+    width: 45%;
+    height: 25%;
+    align-self: flex-end;
+    margin-block-end: 12%;
+}
+.king__oval1 {
+    width: 60%;
+    height: 30%;
+    position: absolute;
+    top: 38%;
+    left: 10%;
+    border-radius: 50%;
+    transform: rotate(40deg);
+}
+.king__oval2 {
+    width: 20%;
+    height: 20%;
+    border-radius: 30% 70% 10% 90% / 30% 90% 10% 70%;
+    position: absolute;
+    top: 24%;
+    left: 40%;
+    transform: rotate(45deg);
+}
+.king__oval3 {
+    width: 60%;
+    height: 30%;
+    position: absolute;
+    top: 38%;
+    right: 10%;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+.king__rectangle1 {
+    width: 20%;
+    height: 3%;
+    position: absolute;
+    top: 14%;
+}
+.king__rectangle2 {
+    width: 5%;
+    height: 20%;
+    position: absolute;
+    top: 8%;
+}
+.king__rectangle3 {
+    width: 15%;
+    height: 18%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 17%;
+    left: 18%;
+}
+.king__rectangle4 {
+    width: 15%;
+    height: 18%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 17%;
+    right: 18%;
+}

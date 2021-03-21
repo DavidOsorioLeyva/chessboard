@@ -1,0 +1,91 @@
+.queen {
+    width: 50%;
+    height: 20%;
+    align-self: flex-end;
+    margin-block-end: 10%;
+    border-radius: 50% 50% 0% 100% / 100% 100% 0% 0%;
+}
+.queen__circle1 {
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+.queen__circle2 {
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 24%;
+}
+.queen__circle3 {
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 44%;
+}
+.queen__circle4 {
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    right: 24%;
+}
+.queen__circle5 {
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    right: 8%;
+}
+.queen__rectangle1 {
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-30deg);
+}
+.queen__rectangle2 {
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 26%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-15deg);
+}
+.queen__rectangle3 {
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.queen__rectangle4 {
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    right: 25%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(15deg);
+}
+.queen__rectangle5 {
+    width: 20%;
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(30deg);
+}

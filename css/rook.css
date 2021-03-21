@@ -1,0 +1,39 @@
+.rook {
+    clip-path: polygon(18% 90%, 84% 90%, 83% 77%, 73% 64%, 73% 39%, 83% 23%, 84% 10%, 18% 10%, 18% 23%, 30% 39%, 30% 64%, 18% 77%);
+    z-index: 3;
+}
+.rook__rectangle1 {
+    width: 65%;
+    height: 12%;
+    position: absolute;
+    bottom: 10%;
+    z-index: 2;
+}
+.rook__rectangle2-wrapper {
+    width: 55%;
+    height: 20%;
+    position: absolute;
+    top: 10%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    z-index: 2;
+}
+.rook__figure-w {
+    background-color: var(--white-color);
+}
+.rook__figure-b {
+    background-color: var(--black-color);
+}
+/*------------*/
+.rook__rectangle1.white {
+    background-color: var(--white-piece);
+}
+.rook__rectangle2-wrapper.white {
+    background-color: var(--white-piece);
+}
+.rook__rectangle1.black {
+    background-color: var(--black-piece);
+}
+.rook__rectangle2-wrapper.black {
+    background-color: var(--black-piece);
+}

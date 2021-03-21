@@ -1,0 +1,108 @@
+.bishop {
+    width: 25%;
+    height: 25%;
+    align-self: flex-end;
+    margin-block-end: 35%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.bishop__circle1 {
+    width: 14%;
+    height: 14%;
+    position: absolute;
+    top: 12%;
+    left: 43%;
+    border-radius: 50%;
+}
+.bishop__circle2 {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    border-radius: 60% 40% 60% 40% / 60% 40% 60% 40%;
+    transform: rotate(45deg);
+}
+.bishop__rectangle1 {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    top: 18%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.bishop__rectangle2 {
+    width: 20%;
+    height: 20%;
+    border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
+    position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: rotate(45deg);
+}
+.bishop__cross1 {
+    width: 3%;
+    height: 20%;
+    border-radius: 30%;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+}
+.bishop__cross2 {
+    width: 20%;
+    height: 3%;
+    border-radius: 30%;
+    position: absolute;
+    top: 38%;
+    left: 40%;
+}
+.bishop__line1 {
+    width: 20%;
+    height: 20%;
+    border-left: solid var(--black-piece);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 23%;
+    left: 23%;
+    transform: rotate(250deg);
+}
+.bishop__line2 {
+    width: 20%;
+    height: 20%;
+    border-right: solid var(--black-piece);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 23%;
+    right: 23%;
+    transform: rotate(-250deg);
+}
+.bishop__line3 {
+    width: 20%;
+    height: 20%;
+    border-top: solid var(--black-piece);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    transform: rotate(-20deg);
+}
+.bishop__line4 {
+    width: 20%;
+    height: 20%;
+    border-top: solid var(--black-piece);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    transform: rotate(20deg);
+}
+.bishop__line1.line-white {
+    border-left: solid var(--white-piece);
+}
+.bishop__line2.line-white {
+    border-right: solid var(--white-piece);
+}
+.bishop__line3.line-white {
+    border-top: solid var(--white-piece);
+}
+.bishop__line4.line-white {
+    border-top: solid var(--white-piece);
+}

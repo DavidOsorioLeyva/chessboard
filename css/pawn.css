@@ -1,0 +1,46 @@
+.pawn {
+    border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+    /* transform: rotate(-90deg); */
+    width: 55%;
+    height: 25%;
+    align-self: flex-end;
+    margin-block-end: 10%;
+}
+.pawn__circle1 {
+    width: 40%;
+    height: 12%;
+    border-radius: 50%;
+    position: absolute;
+    top: 47%;
+    left: 30%;
+}
+.pawn__circle2 {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    position: absolute;
+    top: 22%;
+    left: 35%;
+    background-color: var(--black-piece);
+}
+.pawn__circle3 {
+    width: 28%;
+    height: 30%;
+    position: absolute;
+    top: 40%;
+    left: 36%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.pawn__circle1.black {
+    background-color: var(--black-piece);
+}
+.pawn__circle2.black {
+    background-color: var(--black-piece);
+}
+.pawn__circle1.white {
+    background-color: var(--white-piece);
+}
+.pawn__circle2.white {
+    background-color: var(--white-piece);
+}
