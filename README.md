@@ -2,7 +2,7 @@
 **This is an amazing drawing of a chess board.**  
 This drawing is part of the challenge [#DibujarteCSS](https://dibujartecss.musarte.dev/ "It´s time to draw with CSS!")  
 It also includes a short animation about a well-known checkmating.  
-And of course responsive design. :tw-1f4f1:
+And of course responsive design. :iphone: 
 ![Chess Board](https://i.ibb.co/fnjCsFP/chessboard.png)
 
-**Check it out!** :tw-1f440:
+**Check it out!** :eyes:
