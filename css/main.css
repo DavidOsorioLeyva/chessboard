@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
 :root {
-    --white-color: #e7e4d8;
-    --black-color: #9c6a45;
+    --white: #E7E4D8;
+    --black: #9C6A45;
     --white-piece: #FFF;
     --black-piece: #000;
 }
@@ -9,97 +11,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
 body {
     font-family: 'Open Sans', sans-serif;
 }
-header {
-    width: 100%;
-    height: 50px;
-    background-color: var(--black-color);
-    color: var(--white-piece);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.main {
-    width: 100%;
-    height: calc(100vh - 50px);
-    display: grid;
-    grid-template-columns: 1fr 600px 1fr;
-    place-items: center;
-}
-.info-wrapper {
-    width: 80%;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: var(--white-color);
-    text-align: center;
-}
-.info-wrapper p {
-    margin-block-end: 10px;
-}
-.button-wrapper button {
-    background-color: var(--black-color);
-    color: var(--white-piece);
-    font-size: 16px;
-    font-weight: bolder;
-    padding: 5px 10px;
+button {
+    padding: 0;
     border: none;
-    border-bottom: 2px solid var(--black-piece);
-    border-radius: 5px;
+    font-family: inherit;
     cursor: pointer;
-    outline: none;
 }
-.button-wrapper button:active {
-    border: none;
-}
-.board-wrapper {
-    width: 510px;
-    height: 510px;
-    border: 5px ridge var(--white-color);
+/* --- --- --- HEADER STYLES --- --- --- */
+.header {
+    height: 5rem;
     display: grid;
-    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    place-items: center;
+    background-color: var(--black);
+    color: var(--white-piece);
 }
-.white-box {
-    background-color: var(--white-color);
+.header__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+/* --- --- --- MAIN STYLES --- --- --- */
+.main {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.black-box {
-    background-color: var(--black-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.piece-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-.white-piece {
-    width: 80%;
-    height: 80%;
-    background-color: var(--white-piece);
-}
-.black-piece {
-    width: 80%;
-    height: 80%;
-    background-color: var(--black-piece);
-}
-/*------ Definition of colors for the supporting figures ------*/
-.blck-p {
-    background-color: var(--black-piece);
-}
-.wht-p {
-    background-color: var(--white-piece);
-}
-.blck-c {
-    background-color: var(--black-color);
-}
-.wht-c {
-    background-color: var(--white-color);
+    flex-direction: column;
 }
