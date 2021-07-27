@@ -62,17 +62,17 @@ button {
 .main__btn {
     padding: .5rem 1rem;
     margin-block-end: 2rem;
-    border-block-end: .2rem solid var(--black-piece);
     border-radius: .5rem;
     font-size: 1.6rem;
     font-weight: 700;
     background-color: var(--black);
     color: var(--white-piece);
     order: 2;
+    transition: transform .2s linear;
 }
-/* .main__btn:active {
-    border: none;
-} */
+.main__btn:active {
+    transform: translateY(0.4rem);
+}
 /* --- --- --- BOARD STYLES --- --- --- */
 .board {
     --b-size: 29.8rem;
