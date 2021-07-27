@@ -38,9 +38,8 @@ button {
 /* --- --- --- MAIN STYLES --- --- --- */
 .main {
     padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 .main__descrip {
     max-width: 30rem;
@@ -96,4 +95,27 @@ button {
     background-size: var(--square-size-2x) var(--square-size-2x);
     background-position: 0 0, 0 var(--square-size), var(--square-size) var(--minus-square-size), var(--minus-square-size) 0;
     order: 1;
+}
+@media screen and (min-width: 550px) {
+    .board {
+        --b-size: 53rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main {
+        height: calc(100vh - 5rem);
+        grid-template-columns: 1fr 54rem 1fr;
+        padding: 0;
+    }
+    .main__descrip {
+        order: 1;
+    }
+    .board {
+        margin: 0;
+        order: 2;
+    }
+    .main__btn {
+        margin: 0;
+        order: 3;
+    }
 }
