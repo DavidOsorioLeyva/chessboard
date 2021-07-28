@@ -85,6 +85,9 @@ button {
     /*-----------------------------*/
     width: var(--b-size);
     height: var(--b-size);
+    display: grid;
+    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+    place-items: stretch;
     margin-block-end: 2rem;
     border: var(--border) ridge var(--white);
     background-color: var(--white);
@@ -118,4 +121,11 @@ button {
         margin: 0;
         order: 3;
     }
+}
+/* --- --- --- PIECES STYLES --- --- --- */
+.blacks {
+    background-color: var(--black-piece);
+}
+.whites {
+    background-color: var(--white-piece);
 }
