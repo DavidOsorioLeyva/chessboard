@@ -3,12 +3,12 @@
 }
 .bishop::before {
     content: '';
-    width: 13%;
-    height: 13%;
+    width: 12%;
+    height: 12%;
     display: block;
     position: absolute;
-    top: 11%;
-    left: 43%;
+    top: 5%;
+    left: 45%;
     border-radius: 50%;
 }
 .bishop::after {
@@ -23,12 +23,12 @@
 }
 .bishop__circle {
     width: 30%;
-    height: 30%;
+    height: 35%;
     position: absolute;
-    top: 26%;
+    top: 23%;
     left: 35%;
     border-radius: 70% 30% 70% 30% / 70% 30% 70% 30%;
-    transform: rotate(45deg);
+    transform: rotate(60deg);
     z-index: 2;
 }
 .bishop__circle::before {
@@ -37,123 +37,112 @@
     height: 80%;
     display: block;
     position: absolute;
-    top: -28%;
-    left: -39%;
-    transform: rotate(-45deg);
+    top: -17%;
+    left: -55%;
+    transform: rotate(-57deg);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.bishop__circle::after {
+    content: '';
+    width: 100%;
+    height: 85%;
+    display: block;
+    position: absolute;
+    bottom: -37%;
+    right: -89%;
+    border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
+    transform: rotate(-14deg);
+}
+.bishop__cross {
+    width: 4%;
+    height: 20%;
+    position: absolute;
+    top: 28%;
+    left: 48%;
+    border-radius: 30%;
+    background-color: var(--white);
+    z-index: 3;
+}
+.bishop__cross::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border-radius: 30%;
+    transform: rotate(90deg);
+    background-color: var(--white);
+}
+.bishop__lines {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: 16%;
+    left: 22%;
+    border-radius: 50%;
+    border-inline-start: .2rem solid;
+    transform: rotate(-100deg);
+    z-index: 4;
+}
+.bishop__lines::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 180%;
+    right: 40%;
+    border-radius: 50%;
+    border-inline-end: .2rem solid;
+    transform: rotate(200deg);
+}
+.bishop__lines2 {
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: 6%;
+    left: 11%;
+    border-radius: 50%;
+    border-block-start: .2rem solid;
+}
+.bishop__lines2::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -297%;
+    top: -32%;
+    border-radius: 50%;
+    border-block-start: .2rem solid;
 }
 /* ----- Modifiers ----- */
 .bishop--black::before,
 .bishop--black::after,
 .bishop--black .bishop__circle,
-.bishop--black .bishop__circle::before {
+.bishop--black .bishop__circle::before,
+.bishop--black .bishop__circle::after {
     background-color: var(--black-piece);
 }
-/* .bishop {
-    width: 25%;
-    height: 25%;
-    align-self: flex-end;
-    margin-block-end: 35%;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+.bishop--black .bishop__lines,
+.bishop--black .bishop__lines2 {
+    border-color: var(--black-piece);
 }
-.bishop__circle1 {
-    width: 14%;
-    height: 14%;
-    position: absolute;
-    top: 12%;
-    left: 43%;
-    border-radius: 50%;
+.bishop--white::before,
+.bishop--white::after,
+.bishop--white .bishop__circle,
+.bishop--white .bishop__circle::before,
+.bishop--white .bishop__circle::after {
+    background-color: var(--white-piece);
 }
-.bishop__circle2 {
-    width: 30%;
-    height: 30%;
-    position: absolute;
-    top: 28%;
-    left: 35%;
-    border-radius: 60% 40% 60% 40% / 60% 40% 60% 40%;
-    transform: rotate(45deg);
+.bishop--white .bishop__lines,
+.bishop--white .bishop__lines2 {
+    border-color: var(--white-piece);
 }
-.bishop__rectangle1 {
-    width: 30%;
-    height: 20%;
-    position: absolute;
-    top: 18%;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+@media screen and (min-width: 550px) {
+    .bishop__lines,
+    .bishop__lines::before,
+    .bishop__lines2,
+    .bishop__lines2::before {
+        border-width: .4rem;
+    }
 }
-.bishop__rectangle2 {
-    width: 20%;
-    height: 20%;
-    border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
-    position: absolute;
-    top: 55%;
-    left: 40%;
-    transform: rotate(45deg);
-}
-.bishop__cross1 {
-    width: 3%;
-    height: 20%;
-    border-radius: 30%;
-    position: absolute;
-    top: 30%;
-    left: 48%;
-}
-.bishop__cross2 {
-    width: 20%;
-    height: 3%;
-    border-radius: 30%;
-    position: absolute;
-    top: 38%;
-    left: 40%;
-}
-.bishop__line1 {
-    width: 20%;
-    height: 20%;
-    border-left: solid var(--black-piece);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 23%;
-    left: 23%;
-    transform: rotate(250deg);
-}
-.bishop__line2 {
-    width: 20%;
-    height: 20%;
-    border-right: solid var(--black-piece);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 23%;
-    right: 23%;
-    transform: rotate(-250deg);
-}
-.bishop__line3 {
-    width: 20%;
-    height: 20%;
-    border-top: solid var(--black-piece);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 10%;
-    left: 15%;
-    transform: rotate(-20deg);
-}
-.bishop__line4 {
-    width: 20%;
-    height: 20%;
-    border-top: solid var(--black-piece);
-    border-radius: 50%;
-    position: absolute;
-    bottom: 10%;
-    right: 15%;
-    transform: rotate(20deg);
-}
-.bishop__line1.line-white {
-    border-left: solid var(--white-piece);
-}
-.bishop__line2.line-white {
-    border-right: solid var(--white-piece);
-}
-.bishop__line3.line-white {
-    border-top: solid var(--white-piece);
-}
-.bishop__line4.line-white {
-    border-top: solid var(--white-piece);
-} */
