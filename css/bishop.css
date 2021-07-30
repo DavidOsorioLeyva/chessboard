@@ -1,4 +1,55 @@
 .bishop {
+    position: relative;
+}
+.bishop::before {
+    content: '';
+    width: 13%;
+    height: 13%;
+    display: block;
+    position: absolute;
+    top: 11%;
+    left: 43%;
+    border-radius: 50%;
+}
+.bishop::after {
+    content: '';
+    width: 25%;
+    height: 25%;
+    display: block;
+    position: absolute;
+    left: 37.5%;
+    bottom: 35%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+.bishop__circle {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 26%;
+    left: 35%;
+    border-radius: 70% 30% 70% 30% / 70% 30% 70% 30%;
+    transform: rotate(45deg);
+    z-index: 2;
+}
+.bishop__circle::before {
+    content: '';
+    width: 110%;
+    height: 80%;
+    display: block;
+    position: absolute;
+    top: -28%;
+    left: -39%;
+    transform: rotate(-45deg);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+/* ----- Modifiers ----- */
+.bishop--black::before,
+.bishop--black::after,
+.bishop--black .bishop__circle,
+.bishop--black .bishop__circle::before {
+    background-color: var(--black-piece);
+}
+/* .bishop {
     width: 25%;
     height: 25%;
     align-self: flex-end;
@@ -105,4 +156,4 @@
 }
 .bishop__line4.line-white {
     border-top: solid var(--white-piece);
-}
+} */
