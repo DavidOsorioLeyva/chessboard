@@ -122,10 +122,7 @@ button {
         order: 3;
     }
 }
-/* --- --- --- PIECES STYLES --- --- --- */
-.blacks {
-    background-color: var(--black-piece);
-}
-.whites {
-    background-color: var(--white-piece);
+.space {
+    grid-column: 1 / 9;
+    grid-row: 3 / 7;
 }

@@ -135,7 +135,9 @@
     background-color: var(--white-piece);
 }
 .bishop--white .bishop__lines,
-.bishop--white .bishop__lines2 {
+.bishop--white .bishop__lines::before,
+.bishop--white .bishop__lines2,
+.bishop--white .bishop__lines2::before {
     border-color: var(--white-piece);
 }
 @media screen and (min-width: 550px) {
