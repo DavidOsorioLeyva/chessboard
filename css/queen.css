@@ -1,91 +1,103 @@
 .queen {
+    position: relative;
+}
+.queen::before {
+    content: '';
     width: 50%;
     height: 20%;
-    align-self: flex-end;
-    margin-block-end: 10%;
+    display: block;
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
     border-radius: 50% 50% 0% 100% / 100% 100% 0% 0%;
 }
-.queen__circle1 {
-    width: 12%;
-    height: 12%;
-    border-radius: 50%;
+.queen::after {
+    top: 25%;
+    left: 15%;
+    transform: rotate(-30deg);
+}
+.queen__triangle,
+.queen__triangle2,
+.queen__circle,
+.queen__circle2 {
+    width: 100%;
+    height: 100%;
     position: absolute;
+}
+.queen__triangle::before {
+    top: 20%;
+    left: 26%;
+    transform: rotate(-15deg);
+}
+.queen__triangle::after {
+    top: 15%;
+    left: 40%;
+}
+.queen__triangle2::before {
+    top: 20%;
+    right: 25%;
+    transform: rotate(15deg);
+}
+.queen__triangle2::after {
+    top: 25%;
+    right: 15%;
+    transform: rotate(30deg);
+}
+.queen::after,
+.queen__triangle::before,
+.queen__triangle::after,
+.queen__triangle2::before,
+.queen__triangle2::after {
+    content: '';
+    width: 20%;
+    height: 60%;
+    display: block;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.queen__circle::before {
     top: 25%;
     left: 8%;
 }
-.queen__circle2 {
-    width: 12%;
-    height: 12%;
-    border-radius: 50%;
-    position: absolute;
+.queen__circle::after {
     top: 20%;
     left: 24%;
 }
-.queen__circle3 {
-    width: 12%;
-    height: 12%;
-    border-radius: 50%;
-    position: absolute;
+.queen__circle2::before {
     top: 15%;
     left: 44%;
 }
-.queen__circle4 {
-    width: 12%;
-    height: 12%;
-    border-radius: 50%;
-    position: absolute;
+.queen__circle2::after {
     top: 20%;
     right: 24%;
 }
-.queen__circle5 {
-    width: 12%;
-    height: 12%;
-    border-radius: 50%;
-    position: absolute;
+.queen__circle3 {
     top: 25%;
     right: 8%;
 }
-.queen__rectangle1 {
-    width: 20%;
-    height: 60%;
+.queen__circle::before,
+.queen__circle::after,
+.queen__circle2::before,
+.queen__circle2::after,
+.queen__circle3 {
+    content: '';
+    width: 12%;
+    height: 12%;
+    display: block;
     position: absolute;
-    top: 25%;
-    left: 15%;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    transform: rotate(-30deg);
+    border-radius: 50%;
 }
-.queen__rectangle2 {
-    width: 20%;
-    height: 60%;
-    position: absolute;
-    top: 20%;
-    left: 26%;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    transform: rotate(-15deg);
-}
-.queen__rectangle3 {
-    width: 20%;
-    height: 60%;
-    position: absolute;
-    top: 15%;
-    left: 40%;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-.queen__rectangle4 {
-    width: 20%;
-    height: 60%;
-    position: absolute;
-    top: 20%;
-    right: 25%;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    transform: rotate(15deg);
-}
-.queen__rectangle5 {
-    width: 20%;
-    height: 60%;
-    position: absolute;
-    top: 25%;
-    right: 15%;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    transform: rotate(30deg);
+/* ----- Modifiers ----- */
+.queen--black::before,
+.queen--black::after,
+.queen--black .queen__triangle::before,
+.queen--black .queen__triangle::after,
+.queen--black .queen__triangle2::before,
+.queen--black .queen__triangle2::after,
+.queen--black .queen__circle::before,
+.queen--black .queen__circle::after,
+.queen--black .queen__circle2::before,
+.queen--black .queen__circle2::after,
+.queen--black .queen__circle3 {
+    background-color: var(--black-piece);
 }
