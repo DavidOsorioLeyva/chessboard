@@ -101,3 +101,16 @@
 .queen--black .queen__circle3 {
     background-color: var(--black-piece);
 }
+.queen--white::before,
+.queen--white::after,
+.queen--white .queen__triangle::before,
+.queen--white .queen__triangle::after,
+.queen--white .queen__triangle2::before,
+.queen--white .queen__triangle2::after,
+.queen--white .queen__circle::before,
+.queen--white .queen__circle::after,
+.queen--white .queen__circle2::before,
+.queen--white .queen__circle2::after,
+.queen--white .queen__circle3 {
+    background-color: var(--white-piece);
+}
