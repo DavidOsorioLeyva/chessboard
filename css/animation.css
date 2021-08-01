@@ -1,21 +1,66 @@
-#pawn-one {
-    transition: all 0.5s;
+#Nb8, #Ng8, #e7, #e2, #Qd1, #Bf1 {
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
-#pawn-two {
-    transition: all 0.5s;
+#f7 {
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
-#pawn-three {
-    transition: all 0.5s;
+@keyframes move-one {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-200%);
+    }
 }
-#horse-one {
-    transition: all 0.5s;
+@keyframes move-two {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(200%);
+    }
 }
-#horse-two {
-    transition: all 0.5s;
+@keyframes move-three {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-300%, -300%);
+    }
 }
-#bishop-one {
-    transition: all 0.5s;
+@keyframes move-four {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(100%, 200%);
+    }
 }
-#queen-one {
-    transition: all 0.5s;
+@keyframes move-five {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(400%, -400%);
+    }
+}
+@keyframes move-six {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-100%, 200%);
+    }
+}
+@keyframes move-seven {
+    from {
+        transform: translate(400%, -400%);
+    }
+    to {
+        transform: translate(200%, -600%);
+    }
 }
