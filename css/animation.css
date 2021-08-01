@@ -4,7 +4,7 @@
     animation-fill-mode: forwards;
 }
 #f7 {
-    animation-duration: .3s;
+    animation-duration: .4s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -62,5 +62,13 @@
     }
     to {
         transform: translate(200%, -600%);
+    }
+}
+@keyframes hidden {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
     }
 }
