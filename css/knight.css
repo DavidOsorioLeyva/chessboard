@@ -1,88 +1,88 @@
 .knight {
-    position: relative;
+  position: relative;
 }
 .knight::before {
-    content: '';
-    width: 50%;
-    height: 65%;
-    display: block;
-    position: absolute;
-    left: 25%;
-    bottom: 10%;
-    border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
-    clip-path: polygon(100% 100%, 100% 0, 0 0, 0 58%, 21% 39%, 28% 38%, 35% 40%, 36% 47%, 32% 53%, 0 80%, 0 100%);
+  content: '';
+  width: 50%;
+  height: 65%;
+  display: block;
+  position: absolute;
+  left: 25%;
+  bottom: 10%;
+  border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+  clip-path: polygon(100% 100%, 100% 0, 0 0, 0 58%, 21% 39%, 28% 38%, 35% 40%, 36% 47%, 32% 53%, 0 80%, 0 100%);
 }
 .knight::after {
-    content: '';
-    width: 8%;
-    height: 5%;
-    display: block;
-    position: absolute;
-    top: 29%;
-    left: 27%;
-    border-radius: 50%;
-    transform: rotate(-60deg);
-    background-color: var(--white);
+  content: '';
+  width: 8%;
+  height: 5%;
+  display: block;
+  position: absolute;
+  top: 29%;
+  left: 27%;
+  border-radius: 50%;
+  transform: rotate(-60deg);
+  background-color: var(--white);
 }
 .knight__head {
-    width: 30%;
-    height: 30%;
-    position: absolute;
-    top: 20%;
-    left: 22%;
-    border-radius: 50%;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  border-radius: 50%;
 }
 .knight__head::before {
-    content: '';
-    width: 83.4%;
-    height: 100%;
-    position: absolute;
-    top: -42%;
-    left: 3%;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    transform: rotate(-23deg);
+  content: '';
+  width: 83.4%;
+  height: 100%;
+  position: absolute;
+  top: -42%;
+  left: 3%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(-23deg);
 }
 .knight__head::after {
-    content: '';
-    width: 100%;
-    height: 83.4%;
-    position: absolute;
-    top: -30%;
-    left: 45%;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    transform: rotate(16deg);
+  content: '';
+  width: 100%;
+  height: 83.4%;
+  position: absolute;
+  top: -30%;
+  left: 45%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(16deg);
 }
 .knight__mouth {
-    width: 30%;
-    height: 15%;
-    border-radius: 40%;
-    position: absolute;
-    top: 45%;
-    left: 15%;
-    transform: rotate(-37deg);
+  width: 30%;
+  height: 15%;
+  border-radius: 40%;
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  transform: rotate(-37deg);
 }
 .knight__mouth::before {
-    content: '';
-    width: 100%;
-    height: 88%;
-    display: block;
-    border-radius: 40%;
-    position: absolute;
-    top: -58%;
-    left: -5%;
-    transform: rotate(-10deg);
+  content: '';
+  width: 100%;
+  height: 88%;
+  display: block;
+  border-radius: 40%;
+  position: absolute;
+  top: -58%;
+  left: -5%;
+  transform: rotate(-10deg);
 }
 .knight__mouth::after {
-    content: '';
-    width: 30%;
-    height: 20%;
-    display: block;
-    position: absolute;
-    top: -30%;
-    left: 10%;
-    border-radius: 50%;
-    transform: rotate(-10deg);
-    background-color: var(--white);
+  content: '';
+  width: 30%;
+  height: 20%;
+  display: block;
+  position: absolute;
+  top: -30%;
+  left: 10%;
+  border-radius: 50%;
+  transform: rotate(-10deg);
+  background-color: var(--white);
 }
 /* ----- Modifiers ----- */
 .knight--black::before,
@@ -91,7 +91,7 @@
 .knight--black .knight__head::after,
 .knight--black .knight__mouth,
 .knight--black .knight__mouth::before {
-    background-color: var(--black-piece);
+  background-color: var(--black-piece);
 }
 .knight--white::before,
 .knight--white .knight__head,
@@ -99,5 +99,5 @@
 .knight--white .knight__head::after,
 .knight--white .knight__mouth,
 .knight--white .knight__mouth::before {
-    background-color: var(--white-piece);
+  background-color: var(--white-piece);
 }

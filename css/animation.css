@@ -1,74 +1,74 @@
 #Nb8, #Ng8, #e7, #e2, #Qd1, #Bf1 {
-    animation-duration: .5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
 #f7 {
-    animation-duration: .4s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+  animation-duration: .4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
 }
 @keyframes move-one {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-200%);
-    }
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200%);
+  }
 }
 @keyframes move-two {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(200%);
-    }
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(200%);
+  }
 }
 @keyframes move-three {
-    from {
-        transform: translate(0, 0);
-    }
-    to {
-        transform: translate(-300%, -300%);
-    }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-300%, -300%);
+  }
 }
 @keyframes move-four {
-    from {
-        transform: translate(0, 0);
-    }
-    to {
-        transform: translate(100%, 200%);
-    }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(100%, 200%);
+  }
 }
 @keyframes move-five {
-    from {
-        transform: translate(0, 0);
-    }
-    to {
-        transform: translate(400%, -400%);
-    }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(400%, -400%);
+  }
 }
 @keyframes move-six {
-    from {
-        transform: translate(0, 0);
-    }
-    to {
-        transform: translate(-100%, 200%);
-    }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100%, 200%);
+  }
 }
 @keyframes move-seven {
-    from {
-        transform: translate(400%, -400%);
-    }
-    to {
-        transform: translate(200%, -600%);
-    }
+  from {
+    transform: translate(400%, -400%);
+  }
+  to {
+    transform: translate(200%, -600%);
+  }
 }
 @keyframes hidden {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

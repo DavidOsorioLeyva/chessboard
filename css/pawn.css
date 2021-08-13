@@ -1,61 +1,61 @@
 .pawn {
-    position: relative;
+  position: relative;
 }
 .pawn::before {
-    content: '';
-    width: 55%;
-    height: 25%;
-    display: block;
-    position: absolute;
-    left: 22.5%;
-    bottom: 10%;
-    border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
+  content: '';
+  width: 55%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  left: 22.5%;
+  bottom: 10%;
+  border-radius: 50% 50% 100% 0% / 100% 100% 0% 0%;
 }
 .pawn::after {
-    content: '';
-    width: 40%;
-    height: 12%;
-    display: block;
-    position: absolute;
-    top: 47%;
-    left: 30%;
-    border-radius: 50%;
+  content: '';
+  width: 40%;
+  height: 12%;
+  display: block;
+  position: absolute;
+  top: 47%;
+  left: 30%;
+  border-radius: 50%;
 }
 .pawn__circle {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .pawn__circle::before {
-    content: '';
-    width: 30%;
-    height: 30%;
-    display: block;
-    position: absolute;
-    top: 22%;
-    left: 35%;
-    border-radius: 50%;
+  content: '';
+  width: 30%;
+  height: 30%;
+  display: block;
+  position: absolute;
+  top: 22%;
+  left: 35%;
+  border-radius: 50%;
 }
 .pawn__circle::after {
-    content: '';
-    width: 28%;
-    height: 30%;
-    display: block;
-    position: absolute;
-    top: 40%;
-    left: 36%;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  content: '';
+  width: 28%;
+  height: 30%;
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 36%;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 /* ----- Modifiers ----- */
 .pawn--black::before,
 .pawn--black::after,
 .pawn--black .pawn__circle::before,
 .pawn--black .pawn__circle::after {
-    background-color: var(--black-piece);
+  background-color: var(--black-piece);
 }
 .pawn--white::before,
 .pawn--white::after,
 .pawn--white .pawn__circle::before,
 .pawn--white .pawn__circle::after {
-    background-color: var(--white-piece);
+  background-color: var(--white-piece);
 }

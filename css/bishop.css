@@ -1,119 +1,119 @@
 .bishop {
-    position: relative;
+  position: relative;
 }
 .bishop::before {
-    content: '';
-    width: 12%;
-    height: 12%;
-    display: block;
-    position: absolute;
-    top: 5%;
-    left: 45%;
-    border-radius: 50%;
+  content: '';
+  width: 12%;
+  height: 12%;
+  display: block;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+  border-radius: 50%;
 }
 .bishop::after {
-    content: '';
-    width: 25%;
-    height: 25%;
-    display: block;
-    position: absolute;
-    left: 37.5%;
-    bottom: 35%;
-    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  content: '';
+  width: 25%;
+  height: 25%;
+  display: block;
+  position: absolute;
+  left: 37.5%;
+  bottom: 35%;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
 .bishop__circle {
-    width: 30%;
-    height: 35%;
-    position: absolute;
-    top: 23%;
-    left: 35%;
-    border-radius: 70% 30% 70% 30% / 70% 30% 70% 30%;
-    transform: rotate(60deg);
-    z-index: 2;
+  width: 30%;
+  height: 35%;
+  position: absolute;
+  top: 23%;
+  left: 35%;
+  border-radius: 70% 30% 70% 30% / 70% 30% 70% 30%;
+  transform: rotate(60deg);
+  z-index: 2;
 }
 .bishop__circle::before {
-    content: '';
-    width: 110%;
-    height: 80%;
-    display: block;
-    position: absolute;
-    top: -17%;
-    left: -55%;
-    transform: rotate(-57deg);
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  content: '';
+  width: 110%;
+  height: 80%;
+  display: block;
+  position: absolute;
+  top: -17%;
+  left: -55%;
+  transform: rotate(-57deg);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 .bishop__circle::after {
-    content: '';
-    width: 100%;
-    height: 85%;
-    display: block;
-    position: absolute;
-    bottom: -37%;
-    right: -89%;
-    border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
-    transform: rotate(-14deg);
+  content: '';
+  width: 100%;
+  height: 85%;
+  display: block;
+  position: absolute;
+  bottom: -37%;
+  right: -89%;
+  border-radius: 0% 100% 100% 0% / 100% 0% 100% 0%;
+  transform: rotate(-14deg);
 }
 .bishop__cross {
-    width: 4%;
-    height: 20%;
-    position: absolute;
-    top: 28%;
-    left: 48%;
-    border-radius: 30%;
-    background-color: var(--white);
-    z-index: 3;
+  width: 4%;
+  height: 20%;
+  position: absolute;
+  top: 28%;
+  left: 48%;
+  border-radius: 30%;
+  background-color: var(--white);
+  z-index: 3;
 }
 .bishop__cross::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    border-radius: 30%;
-    transform: rotate(90deg);
-    background-color: var(--white);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  border-radius: 30%;
+  transform: rotate(90deg);
+  background-color: var(--white);
 }
 .bishop__lines {
-    width: 20%;
-    height: 20%;
-    position: absolute;
-    bottom: 16%;
-    left: 22%;
-    border-radius: 50%;
-    border-inline-start: .2rem solid;
-    transform: rotate(-100deg);
-    z-index: 4;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  bottom: 16%;
+  left: 22%;
+  border-radius: 50%;
+  border-inline-start: .2rem solid;
+  transform: rotate(-100deg);
+  z-index: 4;
 }
 .bishop__lines::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 180%;
-    right: 40%;
-    border-radius: 50%;
-    border-inline-end: .2rem solid;
-    transform: rotate(200deg);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 180%;
+  right: 40%;
+  border-radius: 50%;
+  border-inline-end: .2rem solid;
+  transform: rotate(200deg);
 }
 .bishop__lines2 {
-    width: 20%;
-    height: 20%;
-    position: absolute;
-    bottom: 6%;
-    left: 11%;
-    border-radius: 50%;
-    border-block-start: .2rem solid;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  bottom: 6%;
+  left: 11%;
+  border-radius: 50%;
+  border-block-start: .2rem solid;
 }
 .bishop__lines2::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: -297%;
-    top: -32%;
-    border-radius: 50%;
-    border-block-start: .2rem solid;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -297%;
+  top: -32%;
+  border-radius: 50%;
+  border-block-start: .2rem solid;
 }
 /* ----- Modifiers ----- */
 .bishop--black::before,
@@ -121,30 +121,30 @@
 .bishop--black .bishop__circle,
 .bishop--black .bishop__circle::before,
 .bishop--black .bishop__circle::after {
-    background-color: var(--black-piece);
+  background-color: var(--black-piece);
 }
 .bishop--black .bishop__lines,
 .bishop--black .bishop__lines2 {
-    border-color: var(--black-piece);
+  border-color: var(--black-piece);
 }
 .bishop--white::before,
 .bishop--white::after,
 .bishop--white .bishop__circle,
 .bishop--white .bishop__circle::before,
 .bishop--white .bishop__circle::after {
-    background-color: var(--white-piece);
+  background-color: var(--white-piece);
 }
 .bishop--white .bishop__lines,
 .bishop--white .bishop__lines::before,
 .bishop--white .bishop__lines2,
 .bishop--white .bishop__lines2::before {
-    border-color: var(--white-piece);
+  border-color: var(--white-piece);
 }
 @media screen and (min-width: 550px) {
-    .bishop__lines,
-    .bishop__lines::before,
-    .bishop__lines2,
-    .bishop__lines2::before {
-        border-width: .4rem;
-    }
+  .bishop__lines,
+  .bishop__lines::before,
+  .bishop__lines2,
+  .bishop__lines2::before {
+    border-width: .4rem;
+  }
 }

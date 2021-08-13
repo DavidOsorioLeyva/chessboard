@@ -1,128 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
-    --white: #E7E4D8;
-    --black: #9C6A45;
-    --white-piece: #FFF;
-    --black-piece: #000;
+  --white: #E7E4D8;
+  --black: #9C6A45;
+  --white-piece: #FFF;
+  --black-piece: #000;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 button {
-    padding: 0;
-    border: none;
-    font-family: inherit;
-    cursor: pointer;
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 /* --- --- --- HEADER STYLES --- --- --- */
 .header {
-    height: 5rem;
-    display: grid;
-    place-items: center;
-    background-color: var(--black);
-    color: var(--white-piece);
+  height: 5rem;
+  display: grid;
+  place-items: center;
+  background-color: var(--black);
+  color: var(--white-piece);
 }
 .header__title {
-    font-size: 3.2rem;
-    font-weight: 700;
+  font-size: 3.2rem;
+  font-weight: 700;
 }
 /* --- --- --- MAIN STYLES --- --- --- */
 .main {
-    padding: 2rem 0;
-    display: grid;
-    place-items: center;
+  padding: 2rem 0;
+  display: grid;
+  place-items: center;
 }
 .main__descrip {
-    max-width: 30rem;
-    padding: 1rem;
-    border-radius: 1rem;
-    text-align: center;
-    background-color: var(--white);
-    order: 3;
+  max-width: 30rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: var(--white);
+  order: 3;
 }
 .main__title {
-    font-size: 2.4rem;
-    font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 .main__descrip > p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 .main__descrip > p:nth-child(2) {
-    margin-block-end: 1rem;
+  margin-block-end: 1rem;
 }
 .main__btn {
-    padding: .5rem 1rem;
-    margin-block-end: 2rem;
-    border-radius: .5rem;
-    font-size: 1.6rem;
-    font-weight: 700;
-    background-color: var(--black);
-    color: var(--white-piece);
-    order: 2;
-    transition: transform .2s linear;
+  padding: .5rem 1rem;
+  margin-block-end: 2rem;
+  border-radius: .5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: var(--black);
+  color: var(--white-piece);
+  order: 2;
+  transition: transform .2s linear;
 }
 .main__btn:active {
-    transform: translateY(0.4rem);
+  transform: translateY(0.4rem);
 }
 /* --- --- --- BOARD STYLES --- --- --- */
 .board {
-    --b-size: 29.8rem;
-    --border: .5rem;
-    --border-2x: calc( var(--border) * 2 );
-    --b-size-content: calc( var(--b-size) - var(--border-2x) );
-    --square-size: calc( var(--b-size-content) / 8 );
-    --square-size-2x: calc( var(--square-size) * 2 );
-    --minus-square-size: calc( var(--square-size) * -1 );
-    /*-----------------------------*/
-    width: var(--b-size);
-    height: var(--b-size);
-    display: grid;
-    grid-template: repeat(8, 1fr) / repeat(8, 1fr);
-    place-items: stretch;
-    margin-block-end: 2rem;
-    border: var(--border) ridge var(--white);
-    background-color: var(--white);
-    background-image: linear-gradient(45deg, var(--black) 25%, transparent 25%),
-                      linear-gradient(-45deg, var(--black) 25%, transparent 25%),
-                      linear-gradient(45deg, transparent 75%, var(--black) 25%),
-                      linear-gradient(-45deg, transparent 75%, var(--black) 25%);
-    background-size: var(--square-size-2x) var(--square-size-2x);
-    background-position: 0 0, 0 var(--square-size), var(--square-size) var(--minus-square-size), var(--minus-square-size) 0;
-    order: 1;
+  --b-size: 29.8rem;
+  --border: .5rem;
+  --border-2x: calc( var(--border) * 2 );
+  --b-size-content: calc( var(--b-size) - var(--border-2x) );
+  --square-size: calc( var(--b-size-content) / 8 );
+  --square-size-2x: calc( var(--square-size) * 2 );
+  --minus-square-size: calc( var(--square-size) * -1 );
+  /*-----------------------------*/
+  width: var(--b-size);
+  height: var(--b-size);
+  display: grid;
+  grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+  place-items: stretch;
+  margin-block-end: 2rem;
+  border: var(--border) ridge var(--white);
+  background-color: var(--white);
+  background-image: linear-gradient(45deg, var(--black) 25%, transparent 25%),
+                    linear-gradient(-45deg, var(--black) 25%, transparent 25%),
+                    linear-gradient(45deg, transparent 75%, var(--black) 25%),
+                    linear-gradient(-45deg, transparent 75%, var(--black) 25%);
+  background-size: var(--square-size-2x) var(--square-size-2x);
+  background-position: 0 0, 0 var(--square-size), var(--square-size) var(--minus-square-size), var(--minus-square-size) 0;
+  order: 1;
 }
 @media screen and (min-width: 550px) {
-    .board {
-        --b-size: 53rem;
-    }
+  .board {
+    --b-size: 53rem;
+  }
 }
 @media screen and (min-width: 1024px) {
-    .main {
-        height: calc(100vh - 5rem);
-        grid-template-columns: 1fr 54rem 1fr;
-        padding: 0;
-    }
-    .main__descrip {
-        order: 1;
-    }
-    .board {
-        margin: 0;
-        order: 2;
-    }
-    .main__btn {
-        margin: 0;
-        order: 3;
-    }
+  .main {
+    height: calc(100vh - 5rem);
+    grid-template-columns: 1fr 54rem 1fr;
+    padding: 0;
+  }
+  .main__descrip {
+    order: 1;
+  }
+  .board {
+    margin: 0;
+    order: 2;
+  }
+  .main__btn {
+    margin: 0;
+    order: 3;
+  }
 }
 .space {
-    grid-column: 1 / 9;
-    grid-row: 3 / 7;
+  grid-column: 1 / 9;
+  grid-row: 3 / 7;
 }
